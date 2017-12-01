@@ -184,8 +184,9 @@ export default Ember.Component.extend({
       if (!this.get('one-way')) {
         this._updateValue();
       }
-
-      this.sendAction('action', this._getValue());
+      else {
+        this.sendAction('action', this._getValue());
+      }
     }
   },
 
