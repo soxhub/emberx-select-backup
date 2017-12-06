@@ -1,5 +1,36 @@
 # Change Log
 
+## [v2.2.3](https://github.com/thefrontside/emberx-select/tree/v2.2.3) (2016-12-27)
+[Full Changelog](https://github.com/thefrontside/emberx-select/compare/v2.2.2...v2.2.3)
+
+**Closed issues:**
+
+- Misleading docs? [\#156](https://github.com/thefrontside/emberx-select/issues/156)
+
+**Merged pull requests:**
+
+- Fixed Bug with computed properties \(to v2.2.3\) [\#173](https://github.com/thefrontside/emberx-select/pull/173) ([Robdel12](https://github.com/Robdel12))
+- UA sniff for bad MS Edge bug \(required selects must change value to be valid --glimmer PR\) [\#172](https://github.com/thefrontside/emberx-select/pull/172) ([Robdel12](https://github.com/Robdel12))
+- UA sniff for bad MS Edge bug \(required selects must change value to be valid\) [\#170](https://github.com/thefrontside/emberx-select/pull/170) ([Robdel12](https://github.com/Robdel12))
+- Allow ember-source npm package to work. [\#167](https://github.com/thefrontside/emberx-select/pull/167) ([rwjblue](https://github.com/rwjblue))
+- Replace deprecated contains with includes [\#166](https://github.com/thefrontside/emberx-select/pull/166) ([chrisccerami](https://github.com/chrisccerami))
+- getValue update [\#164](https://github.com/thefrontside/emberx-select/pull/164) ([vinodhrajamuralidharan](https://github.com/vinodhrajamuralidharan))
+
+## [v2.2.2](https://github.com/thefrontside/emberx-select/tree/v2.2.2) (2016-09-03)
+[Full Changelog](https://github.com/thefrontside/emberx-select/compare/v2.2.1...v2.2.2)
+
+**Fixed bugs:**
+
+- isDestroying is false when x-option \(& x-select\) are being destroyed \(Ember 2.8 beta\) [\#138](https://github.com/thefrontside/emberx-select/issues/138)
+- Fire action with default value when in one-way mode [\#134](https://github.com/thefrontside/emberx-select/issues/134)
+
+**Merged pull requests:**
+
+- Fix beta build [\#142](https://github.com/thefrontside/emberx-select/pull/142) ([Robdel12](https://github.com/Robdel12))
+- Update ember-cli to 2.7 [\#137](https://github.com/thefrontside/emberx-select/pull/137) ([Robdel12](https://github.com/Robdel12))
+- Update changelog for 2.2.1 [\#133](https://github.com/thefrontside/emberx-select/pull/133) ([Robdel12](https://github.com/Robdel12))
+- Fire action when one-way is true and no default value provided [\#135](https://github.com/thefrontside/emberx-select/pull/135) ([tehviking](https://github.com/tehviking))
+
 ## [v2.2.1](https://github.com/thefrontside/emberx-select/tree/v2.2.1) (2016-07-19)
 [Full Changelog](https://github.com/thefrontside/emberx-select/compare/v2.2.0...v2.2.1)
 
