@@ -1,5 +1,15 @@
 # Change Log
 
+## [v2.2.4](https://github.com/thefrontside/emberx-select/tree/v2.2.4) (2017-12-06)
+[Full Changelog](https://github.com/thefrontside/emberx-select/compare/v2.2.3...v2.2.4)
+
+This release corrects some issues with documentation and backports some fixes from 3.x to ease the transition to 3.x
+
+- Allow ember-source npm package to work. [\#167](https://github.com/thefrontside/emberx-select/pull/167) ([rwjblue](https://github.com/rwjblue))
+- Replace deprecated contains with includes [\#166](https://github.com/thefrontside/emberx-select/pull/166) ([chrisccerami](https://github.com/chrisccerami))
+- Change event names to kebab-case, standardize arguments
+- Add support for `on-init` event
+
 ## [v2.2.3](https://github.com/thefrontside/emberx-select/tree/v2.2.3) (2016-12-27)
 [Full Changelog](https://github.com/thefrontside/emberx-select/compare/v2.2.2...v2.2.3)
 
@@ -12,8 +22,6 @@
 - Fixed Bug with computed properties \(to v2.2.3\) [\#173](https://github.com/thefrontside/emberx-select/pull/173) ([Robdel12](https://github.com/Robdel12))
 - UA sniff for bad MS Edge bug \(required selects must change value to be valid --glimmer PR\) [\#172](https://github.com/thefrontside/emberx-select/pull/172) ([Robdel12](https://github.com/Robdel12))
 - UA sniff for bad MS Edge bug \(required selects must change value to be valid\) [\#170](https://github.com/thefrontside/emberx-select/pull/170) ([Robdel12](https://github.com/Robdel12))
-- Allow ember-source npm package to work. [\#167](https://github.com/thefrontside/emberx-select/pull/167) ([rwjblue](https://github.com/rwjblue))
-- Replace deprecated contains with includes [\#166](https://github.com/thefrontside/emberx-select/pull/166) ([chrisccerami](https://github.com/chrisccerami))
 - getValue update [\#164](https://github.com/thefrontside/emberx-select/pull/164) ([vinodhrajamuralidharan](https://github.com/vinodhrajamuralidharan))
 
 ## [v2.2.2](https://github.com/thefrontside/emberx-select/tree/v2.2.2) (2016-09-03)
