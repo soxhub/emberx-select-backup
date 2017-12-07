@@ -15,12 +15,12 @@ describeComponent(
       beforeEach(function() {
         this.set('make', 'ford');
         this.set('capture', (value)=> this.value = value);
-        this.set('onClick', (x, value)=> this.click = value);
-        this.set('onFocusOut', (x, value)=> this.focusOut = value);
-        this.set('onBlur', (x, value)=> this.blur = value);
+        this.set('onClick', (value)=> this.click = value);
+        this.set('onFocusOut', (value)=> this.focusOut = value);
+        this.set('onBlur', (value)=> this.blur = value);
 
         this.render(hbs`
-          {{#x-select value=make one-way=true action=capture onclick=onClick onfocusout=onFocusOut onblur=onBlur}}
+          {{#x-select value=make one-way=true action=capture on-click=onClick on-focus-out=onFocusOut on-blur=onBlur}}
             {{#x-option value="ford"}}Ford{{/x-option}}
             {{#x-option value="chevy"}}Chevy{{/x-option}}
             {{#x-option value="dodge" class="spec-dodge-option"}}Dodge{{/x-option}}
