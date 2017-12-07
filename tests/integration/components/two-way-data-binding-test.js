@@ -61,9 +61,13 @@ describeComponent(
           this.set("make", value);
           this.set("wasCalled", true);
         });
+        this.set('initAction', (value) => {
+          this.set('makeInit', value);
+          this.set('wasInitCalled', true);
+        });
 
         this.render(hbs`
-          {{#x-select value=make one-way=true action=selectAction}}
+          {{#x-select value=make one-way=true action=selectAction on-init=initAction}}
             {{#x-option value="fordValue" class="spec-ford-option"}}Ford{{/x-option}}
             {{#x-option value="chevyValue"}}Chevy{{/x-option}}
             {{#x-option value="dodgeValue" class="spec-dodge-option"}}Dodge{{/x-option}}
@@ -81,6 +85,14 @@ describeComponent(
 
       it("invokes the select action on init", function() {
         expect(this.get("wasCalled")).to.equal(true);
+      });
+
+      it("invokes on-init on init", function() {
+        expect(this.get("wasInitCalled")).to.equal(true);
+      });
+
+      it("has context of the selected value when on-init fires", function() {
+        expect(this.get('makeInit')).to.equal("fordValue");
       });
 
     });

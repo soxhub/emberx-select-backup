@@ -177,6 +177,14 @@ sends three arguments: the value, the jQuery event, and the component.
 `on-change` fires when x-select is changed. When the action fires it
 sends three arguments: the value, the jQuery event, and the component.
 
+**on-init**
+
+`on-onit` fires when x-select is initialized. When the action fires it
+sends two arguments: the value and the component.
+
+Using `action` is equivalent to having the same action bound to both `on-init` and `on-change`
+
+
 NOTE: For all events, the 3rd argument, the component, is removed in emberx-select 3.x+
 This argument remains in emberx-select 2.x for legacy support.
 

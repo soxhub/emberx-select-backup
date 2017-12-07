@@ -185,7 +185,10 @@ export default Ember.Component.extend({
         this._updateValue();
       }
 
-      this.sendAction('action', this._getValue());
+      let initValue = this._getValue();
+
+      this.sendAction('action', initValue);
+      this.sendAction('on-init', initValue, this);
     }
   },
 
